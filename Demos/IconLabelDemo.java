@@ -10,7 +10,7 @@ public class IconLabelDemo {
         jfrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         // 1st Image
-        ImageIcon myIcon = new ImageIcon(getClass().getResource("Demos/Puppycat.png"));
+        ImageIcon myIcon = new ImageIcon(getClass().getResource("Puppycat.png"));
         JLabel imageOnly = new JLabel(myIcon, SwingConstants.LEFT);
 
         // 2nd Image
@@ -30,7 +30,7 @@ public class IconLabelDemo {
         imageTextTop.setVerticalTextPosition(SwingConstants.TOP);
 
         // 5th Image
-        JButton imageButton = new JButton(myIcon);
+        JButton imageButton = new JButton("beep boop", myIcon);
 
         // add to content pane
         jfrm.add(imageOnly);
