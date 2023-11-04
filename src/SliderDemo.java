@@ -16,8 +16,8 @@ public class SliderDemo {
         JSlider vert = new JSlider(JSlider.VERTICAL, 0, 100, 10);
         hor.setInverted(true);
         hor.setMajorTickSpacing(10);
-        vert.setMajorTickSpacing(10);
-        vert.setMinorTickSpacing(5);
+        vert.setMajorTickSpacing(20);
+        vert.setMinorTickSpacing(10);
         hor.setPaintTicks(true);
         hor.setPaintLabels(true);
         vert.setPaintTicks(true);
@@ -47,11 +47,14 @@ public class SliderDemo {
             }
         });
 
+        JLabel name = new JLabel("Name: Ian Dellosa, Date: 11/3/23");
+
         // Add to content pane
         jfrm.add(hor);
         jfrm.add(vert);
         jfrm.add(horVal);
         jfrm.add(vertVal);
+        jfrm.add(name);
 
         jfrm.setVisible(true);
 

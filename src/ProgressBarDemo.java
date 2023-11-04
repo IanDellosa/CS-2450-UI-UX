@@ -10,7 +10,7 @@ public class ProgressBarDemo{
         // JFrame
         JFrame jfrm = new JFrame("Progress Bar");
         jfrm.setLayout(new FlowLayout());
-        jfrm.setSize(250,125);
+        jfrm.setSize(275,125);
         jfrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         // Make Progress bar
@@ -46,10 +46,13 @@ public class ProgressBarDemo{
             }
         });
 
+        JLabel name = new JLabel("Name: Ian Dellosa, Date: 11/3/23");
+
         jfrm.add(jpb);
         jfrm.add(press);
         jfrm.add(reset);
         jfrm.add(val);
+        jfrm.add(name);
 
         jfrm.setVisible(true);
     }
