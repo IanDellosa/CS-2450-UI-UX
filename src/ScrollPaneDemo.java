@@ -6,8 +6,12 @@ public class ScrollPaneDemo {
     ScrollPaneDemo() {
         // jfrm
         JFrame jfrm = new JFrame("Scroll Pane");
-        jfrm.setSize(250, 150);
+        jfrm.setSize(200, 400);
         jfrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JPanel jpanel = new JPanel();
+
+        JButton header = new JButton("Header Button!");
 
         JLabel jlab = new JLabel("<html>JScrollPane"
                  + "<br> Using JScrollPane allows us to "
@@ -17,10 +21,18 @@ public class ScrollPaneDemo {
                  + "<br> lines of content. "
                  + "<br> More words as filler "
                  + "<br> If there aren't enough words "
-                 + "<br> then the scroll bar will not show.");
+                 + "<br> then the scroll bar will not show."
+                 + "<br> Adding more lines to fill space"
+                 + "<br> And another line!"
+                 + "<br> Created By:"
+                 + "<br> Ian Dellosa"
+                 + "<br> Date:"
+                 + "<br> November 6th, 2023");
 
-        JScrollPane jsp = new JScrollPane(jlab);
+        jpanel.add(header);
+        jpanel.add(jlab);
 
+        JScrollPane jsp = new JScrollPane(jpanel);
         jfrm.add(jsp);
         jfrm.setVisible(true);
     }
