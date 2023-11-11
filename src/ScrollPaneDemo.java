@@ -11,7 +11,8 @@ public class ScrollPaneDemo {
 
         JPanel jpanel = new JPanel();
 
-        JButton header = new JButton("Header Button!");
+        ImageIcon myImage = new ImageIcon(getClass().getResource("keroppi.png"));
+        JLabel image = new JLabel(myImage);
 
         JLabel jlab = new JLabel("<html>JScrollPane"
                  + "<br> Using JScrollPane allows us to "
@@ -29,7 +30,6 @@ public class ScrollPaneDemo {
                  + "<br> Date:"
                  + "<br> November 6th, 2023");
 
-        jpanel.add(header);
         jpanel.add(jlab);
 
         JScrollPane jsp = new JScrollPane(jpanel);
