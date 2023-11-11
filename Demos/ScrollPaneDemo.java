@@ -11,7 +11,7 @@ public class ScrollPaneDemo {
 
         JPanel jpanel = new JPanel();
 
-        ImageIcon myImage = new ImageIcon(getClass().getResource("keroppi.png"));
+        ImageIcon myImage = new ImageIcon(getClass().getResource("Demos/keroppi.png"));
         JLabel image = new JLabel(myImage);
 
         JLabel jlab = new JLabel("<html>JScrollPane"
